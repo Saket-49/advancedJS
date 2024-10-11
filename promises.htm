@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+     1.	Basic Promise Creation:
+	•	Write a function getNumber() that returns a Promise. If the number is even, the promise resolves with “Even number”, and if the number is odd, it rejects with “Odd number”.
+
+
+
+	2.	Simple Asynchronous Flow:
+	•	Create two Promises p1 and p2. p1 should resolve after 2 seconds with the value “Promise 1 resolved”, and p2 should resolve after 3 seconds with “Promise 2 resolved”. Write a function that waits for both Promises to resolve and logs the results.
+
+
+
+
+    3.	Handling Multiple Promises:
+	•	Write a function that fetches weather data from two cities using two promises. One promise resolves after 2 seconds with “City A: 25°C”, and the second promise resolves after 3 seconds with “City B: 20°C”. Return an array of the results.
+
+
+
+
+    4.   Nested Promises
+    Question: Create a promise that resolves after 2 seconds and returns another promise that resolves after an additional 2 seconds. Log the final message once both promises have resolved.</pre>
+   
+
+
+
+
+	
+
+    <script>
+        //assignment 1
+
+        /*a = Math.round(Math.random()*34)
+        console.log(a)
+        let getNumber = new Promise((resolve, reject)=>{
+            if(a%2 == 0){
+                resolve("even number")
+            }
+            else{
+                reject("odd number")
+            }
+        }).then((value)=>{
+            console.log(value)
+        })*/
+
+
+
+        //assignment 2
+
+       /*let p1 = new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            resolve("promise 1 resolved")
+        }, 2000);
+       })
+       let p2 = new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            resolve("promise 2 resolved")
+        }, 3000);
+       })
+       p1.then((okKaam)=>{
+        console.log(okKaam)
+       })
+       p2.then((okdone)=>{
+        console.log(okdone)
+       })*/
+
+
+
+        // assignment 3
+
+        /*let p1 = new Promise((resolve, reject)=>{
+            setTimeout(() => {
+                console.log("PUNJAB")
+                resolve("23 deg")
+            }, 2000);
+        })
+        let p2 = new Promise((resolve, reject)=>{
+            setTimeout(() => {
+                console.log("KASHMIR")
+                resolve("8 deg")
+            }, 3000);
+        })
+
+        p1.then((punjab)=>{
+            console.log("The temperature in Punjab:", punjab)
+        })
+        p2.then((kashmir)=>{
+            console.log("The temperature in Kashmir:", kashmir)
+        })*/
+
+
+
+
+        // assignment 4
+
+        /*a = Math.round(Math.random()*20)
+        console.log(a)
+        let p1 = new Promise((resolve, reject)=>{
+            if(a>10){
+                resolve("valid number")
+            }
+            else{
+                reject("invalid number")
+            }
+            return(p1)
+        })
+        p1.then((value)=>{
+            console.log(value)
+        })
+        p1.catch((error)=>{
+            console.log(error)
+        })*/
+
+
+        // assignment 5
+
+        /*let p1 = new Promise((resolve, reject)=>{
+            resolve("JavaScript is")
+        }).then((fu)=>{
+            let p2 = new Promise((resolve, reject)=>{
+                console.log(fu)
+                resolve("really awesome")      
+            })
+            return p2
+        }).then((p)=>{
+            console.log(p)
+        })*/
+
+        
+        
+    </script>
+
+</body>
+</html>
